@@ -1,0 +1,12 @@
+vbody {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-grid-subtle {
+    background-image: radial-gradient(rgba(225, 29, 72, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #580a23 100%);
+}
