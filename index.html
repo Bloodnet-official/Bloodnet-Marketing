@@ -60,7 +60,7 @@
 <!-- 1. NAVIGATION BAR -->
 <nav class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-20 items-center">
+        <div class="flex justify-between h-20 items-center gap-6 xl:gap-10">
             <!-- Brand Logo -->
             <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
                 <div class="w-10 h-10 bg-gradient-to-br from-blood-600 to-blood-800 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blood-600/30">
@@ -73,20 +73,20 @@
             </div>
 
             <!-- Nav Links -->
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+            <div class="hidden md:flex items-center space-x-6 xl:space-x-10 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-blood-500 transition">About</a>
                 <a href="#how-it-works" class="hover:text-blood-500 transition">How It Works</a>
                 <a href="#solutions" class="hover:text-blood-500 transition">Solutions</a>
                 <a href="#stakeholders" class="hover:text-blood-500 transition">Stakeholders</a>
-                <a href="#technology" class="hover:text-blood-500 transition">Technology</a>
+
             </div>
 
             <!-- CTA Action Buttons -->
-            <div class="hidden sm:flex items-center space-x-3">
-                <button onclick="openModal('donor-modal')" class="px-4 py-2.5 rounded-lg border border-blood-500 text-blood-100 font-semibold hover:bg-blood-600/20 transition text-sm">
+            <div class="hidden sm:flex items-center space-x-3 xl:space-x-4">
+                <button onclick="openModal('donor-modal')" class="px-4 xl:px-6 py-2.5 rounded-lg border border-blood-500 text-blood-100 font-semibold hover:bg-blood-600/20 transition text-sm">
                     Register as Donor
                 </button>
-                <button onclick="openModal('hospital-modal')" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blood-600 to-blood-800 text-white font-semibold hover:opacity-95 shadow-md shadow-blood-600/30 transition text-sm">
+                <button onclick="openModal('hospital-modal')" class="px-5 xl:px-7 py-2.5 rounded-lg bg-gradient-to-r from-blood-600 to-blood-800 text-white font-semibold hover:opacity-95 shadow-md shadow-blood-600/30 transition text-sm">
                     Request Hospital Demo
                 </button>
             </div>
@@ -508,7 +508,7 @@
     </div>
 </section>
 
-    <!-- CALL TO ACTION BANNER -->
+<!-- CALL TO ACTION BANNER -->
 <section class="py-16 bg-gradient-to-r from-blood-900 via-blood-800 to-navy-900 text-white text-center">
     <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl font-extrabold mb-4">Transform Emergency Blood Mobilization Today</h2>
@@ -548,7 +548,7 @@
                     <li><a href="#how-it-works" class="hover:text-white">How It Works</a></li>
                     <li><a href="#solutions" class="hover:text-white">Key Features</a></li>
                     <li><a href="#stakeholders" class="hover:text-white">Stakeholders</a></li>
-                    <li><a href="#technology" class="hover:text-white">Architecture & Security</a></li>
+
                 </ul>
             </div>
             <div>
@@ -560,6 +560,102 @@
                 </p>
             </div>
         </div>
+        <!-- TEAM MEMBERS TABLE -->
+        <div id="team" class="mb-10 rounded-2xl border border-slate-800 bg-gradient-to-br from-navy-900 to-navy-950 shadow-xl shadow-black/30 overflow-hidden">
+            <!-- Header: title + Figma button -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 px-5 sm:px-6 py-5 border-b border-slate-800 bg-gradient-to-r from-blood-900/40 via-transparent to-transparent">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blood-600 to-blood-800 flex items-center justify-center text-white shadow-lg shadow-blood-600/30">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-extrabold text-sm uppercase tracking-wider">Meet the Team</h4>
+                        <p class="text-[11px] text-slate-400">SE Group 20 &middot; The students behind BloodNet</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="https://www.figma.com/proto/6NlywW3tVgmC26TDiO6fpf/BloodNet?node-id=8-2&amp;p=f&amp;t=OylxvjrZDL5qc9HX-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=8%3A2&amp;show-proto-sidebar=1" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border text-white text-xs font-semibold hover:-translate-y-0.5 transition bg-white/5 border-slate-700 hover:bg-blood-600/20 hover:border-blood-500">
+                        <i class="fa-solid fa-mobile-screen-button text-blood-500"></i>
+                        Mobile Prototype
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400"></i>
+                    </a>
+                    <a href="https://www.figma.com/make/kSQXBHZEuskE4Mudbra9FM/Blood-Bank-Dashboard?fullscreen=1&amp;t=Yf7RwE1xEe0W58Yp-1&amp;code-node-id=0-6" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border text-white text-xs font-semibold hover:-translate-y-0.5 transition bg-gradient-to-r from-blood-600 to-blood-800 border-transparent shadow-md shadow-blood-600/30 hover:opacity-95">
+                        <i class="fa-brands fa-figma"></i>
+                        Website Prototype
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-white/70"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table (scrolls sideways on small screens) -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs">
+                    <thead>
+                    <tr class="text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800 bg-slate-900/40">
+                        <th class="px-5 py-3 font-bold w-12">#</th>
+                        <th class="px-5 py-3 font-bold">Member</th>
+                        <th class="px-5 py-3 font-bold">UOW ID</th>
+                        <th class="px-5 py-3 font-bold">IIT ID</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/70">
+                    <tr class="group hover:bg-blood-600/10 transition">
+                        <td class="px-5 py-3.5 text-slate-500 font-semibold">01</td>
+                        <td class="px-5 py-3.5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-white font-semibold">Onija Perera</span>
+                            </div>
+                        </td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">w2181598</td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">20240554</td>
+                    </tr>
+                    <tr class="group hover:bg-blood-600/10 transition">
+                        <td class="px-5 py-3.5 text-slate-500 font-semibold">02</td>
+                        <td class="px-5 py-3.5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-white font-semibold">Sihas Amarathunga</span>
+                            </div>
+                        </td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">w2151082</td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">20241808</td>
+                    </tr>
+                    <tr class="group hover:bg-blood-600/10 transition">
+                        <td class="px-5 py-3.5 text-slate-500 font-semibold">03</td>
+                        <td class="px-5 py-3.5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-white font-semibold">Chirath Ayush</span>
+                            </div>
+                        </td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">w2182337</td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">20241472</td>
+                    </tr>
+                    <tr class="group hover:bg-blood-600/10 transition">
+                        <td class="px-5 py-3.5 text-slate-500 font-semibold">04</td>
+                        <td class="px-5 py-3.5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-white font-semibold">Chamiru Seneviratne</span>
+                            </div>
+                        </td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">w2157988</td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">20231998</td>
+                    </tr>
+                    <tr class="group hover:bg-blood-600/10 transition">
+                        <td class="px-5 py-3.5 text-slate-500 font-semibold">05</td>
+                        <td class="px-5 py-3.5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-white font-semibold">Nivin Santhila</span>
+                            </div>
+                        </td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">w20844204</td>
+                        <td class="px-5 py-3.5 font-mono text-slate-300">20211131</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
             <p>© 2026 BloodNet Sri Lanka. All rights reserved. Promotional Marketing Concept.</p>
             <div class="flex space-x-4 mt-4 sm:mt-0">
@@ -596,41 +692,41 @@
                 <input type="email" required placeholder="name@hospital.lk" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs text-slate-900 focus:border-blood-600 outline-none">
             </div>
             <div>
-    <label class="block text-xs font-semibold text-slate-700 mb-1">
-        District
-    </label>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">
+                    District
+                </label>
 
-    <select name="district" required
-        class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs text-slate-900 focus:border-blood-600 outline-none">
+                <select name="district" required
+                        class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-xs text-slate-900 focus:border-blood-600 outline-none">
 
-        <option value="">Select District</option>
-        <option>Colombo</option>
-        <option>Gampaha</option>
-        <option>Kalutara</option>
-        <option>Kandy</option>
-        <option>Matale</option>
-        <option>Nuwara Eliya</option>
-        <option>Galle</option>
-        <option>Matara</option>
-        <option>Hambantota</option>
-        <option>Jaffna</option>
-        <option>Kilinochchi</option>
-        <option>Mannar</option>
-        <option>Vavuniya</option>
-        <option>Mullaitivu</option>
-        <option>Batticaloa</option>
-        <option>Ampara</option>
-        <option>Trincomalee</option>
-        <option>Kurunegala</option>
-        <option>Puttalam</option>
-        <option>Anuradhapura</option>
-        <option>Polonnaruwa</option>
-        <option>Badulla</option>
-        <option>Monaragala</option>
-        <option>Ratnapura</option>
-        <option>Kegalle</option>
-    </select>
-</div>
+                    <option value="">Select District</option>
+                    <option>Colombo</option>
+                    <option>Gampaha</option>
+                    <option>Kalutara</option>
+                    <option>Kandy</option>
+                    <option>Matale</option>
+                    <option>Nuwara Eliya</option>
+                    <option>Galle</option>
+                    <option>Matara</option>
+                    <option>Hambantota</option>
+                    <option>Jaffna</option>
+                    <option>Kilinochchi</option>
+                    <option>Mannar</option>
+                    <option>Vavuniya</option>
+                    <option>Mullaitivu</option>
+                    <option>Batticaloa</option>
+                    <option>Ampara</option>
+                    <option>Trincomalee</option>
+                    <option>Kurunegala</option>
+                    <option>Puttalam</option>
+                    <option>Anuradhapura</option>
+                    <option>Polonnaruwa</option>
+                    <option>Badulla</option>
+                    <option>Monaragala</option>
+                    <option>Ratnapura</option>
+                    <option>Kegalle</option>
+                </select>
+            </div>
             <button type="submit" class="w-full py-3 bg-blood-600 hover:bg-blood-700 text-white font-bold rounded-lg text-xs transition shadow-md">
                 Submit Demo Request
             </button>
@@ -681,18 +777,18 @@
             <div>
                 <label class="block text-xs font-semibold text-slate-700 mb-1">Mobile Phone Number (SMS Alerts)</label>
                 <div>
-    <label>Mobile Phone Number</label>
- <input
-        type="tel"
-        name="phone"
-        required
-        pattern="07[0-9]{8}"
-        maxlength="10"
-        placeholder="07XXXXXXXX">
-</div>
-            <button type="submit" class="w-full py-3 bg-blood-600 hover:bg-blood-700 text-white font-bold rounded-lg text-xs transition shadow-md">
-                Register as Voluntary Donor
-            </button>
+                    <label>Mobile Phone Number</label>
+                    <input
+                            type="tel"
+                            name="phone"
+                            required
+                            pattern="07[0-9]{8}"
+                            maxlength="10"
+                            placeholder="07XXXXXXXX">
+                </div>
+                <button type="submit" class="w-full py-3 bg-blood-600 hover:bg-blood-700 text-white font-bold rounded-lg text-xs transition shadow-md">
+                    Register as Voluntary Donor
+                </button>
         </form>
     </div>
 </div>
